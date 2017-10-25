@@ -104,7 +104,7 @@ export default class Slider extends Component {
   render() {
     let trackViews;
     if (this.props.tracks) {
-      trackViews = this.props.tracks.map((track) => {
+      trackViews = this.props.tracks.map((track, index) => {
         return this.renderTrack(track);
       });
     }
